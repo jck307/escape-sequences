@@ -13,8 +13,6 @@ pub const ALT: &'static str = "\x1b";
 pub const TAB: &'static str = "\x09";
 pub const RETURN: &'static str = "\x0d";
 pub const BACKSPACE: &'static str = "\x7f";
-pub const SHIFT_TAB: &'static str = "\x1b[Z";
-pub const CTRL_BACKSPACE: &'static str = "\x08";
 
 pub const HOME: [&'static str; 2] = ["\x1b[1", "\x1b[H"];
 pub const END: [&'static str; 2] = ["\x1b[4", "\x1b[F"];
@@ -23,20 +21,26 @@ pub const PG_DOWN: &'static str = "\x1b[6~";
 pub const DELETE: &'static str = "\x1b[3~";
 pub const INSERT: &'static str = "\x1b[2~";
 
+pub const SHIFT_TAB: &'static str = "\x1b[Z";
+pub const CTRL_BACKSPACE: &'static str = "\x08";
+pub const CTRL_DELETE: &'static str = "\x1b[3;5~";
+pub const SHIFT_DELETE: &'static str = "\x1b[3;2~";
+pub const CTRL_SHIFT_DELETE: &'static str = "\x1b[3;6~";
+
 // Arrows
 
 pub const ARROW_UP: &'static str = "\x1b[A";
 pub const ARROW_DOWN: &'static str = "\x1b[B";
 pub const ARROW_LEFT: &'static str = "\x1b[D";
 pub const ARROW_RIGHT: &'static str = "\x1b[C";
-pub const SHIFT_ARROW_UP: &'static str = "\x1b[1;2A";
-pub const SHIFT_ARROW_DOWN: &'static str = "\x1b[1;2B";
-pub const SHIFT_ARROW_LEFT: &'static str = "\x1b[1;2D";
-pub const SHIFT_ARROW_RIGHT: &'static str = "\x1b[1;2C";
 pub const CTRL_ARROW_UP: &'static str = "\x1b[1;5A";
 pub const CTRL_ARROW_DOWN: &'static str = "\x1b[1;5B";
 pub const CTRL_ARROW_LEFT: &'static str = "\x1b[1;5D";
 pub const CTRL_ARROW_RIGHT: &'static str = "\x1b[1;5C";
+pub const SHIFT_ARROW_UP: &'static str = "\x1b[1;2A";
+pub const SHIFT_ARROW_DOWN: &'static str = "\x1b[1;2B";
+pub const SHIFT_ARROW_LEFT: &'static str = "\x1b[1;2D";
+pub const SHIFT_ARROW_RIGHT: &'static str = "\x1b[1;2C";
 pub const CTRL_SHIFT_ARROW_UP: &'static str = "\x1b[1;6A";
 pub const CTRL_SHIFT_ARROW_DOWN: &'static str = "\x1b[1;6B";
 pub const CTRL_SHIFT_ARROW_LEFT: &'static str = "\x1b[1;6D";
